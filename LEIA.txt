@@ -6,3 +6,6 @@ De preferencia para fazer o modelo nesse sentido. Cada entidade deve ter seu mod
 DOMINIO
 No dominio deve declarar todas os atributos e medodos get/set indicando chave primaria - auto increment. 
 Não esquecer do relacionamento entre classes
+
+REPOSITORIO
+Comunica com o banco de dados
