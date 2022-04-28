@@ -1,0 +1,8 @@
+Dominio -> Repositorio -> Serviço -> Controlador
+
+De preferencia para fazer o modelo nesse sentido. Cada entidade deve ter seu modelo em todas as etapas.
+
+
+DOMINIO
+No dominio deve declarar todas os atributos e medodos get/set indicando chave primaria - auto increment. 
+Não esquecer do relacionamento entre classes
