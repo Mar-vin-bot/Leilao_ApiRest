@@ -3,9 +3,21 @@ Dominio -> Repositorio -> Serviço -> Controlador
 De preferencia para fazer o modelo nesse sentido. Cada entidade deve ter seu modelo em todas as etapas.
 
 
-DOMINIO
+    DOMINIO
 No dominio deve declarar todas os atributos e medodos get/set indicando chave primaria - auto increment. 
 Não esquecer do relacionamento entre classes
+
+    AS ANOTAÇÕES DAMAIN
+@Data   //ELIMINA A necessidade de criar construtor e get/set SEMPRE USADO EM CONJUNTO COM A DEPENDENCIA lombok
+@Entity   // é utilizada para informar que uma classe também é uma entidade.
+implements Serializable   // inserido no nome da classe (interface)
+private static final long serialVersionUID = 1L   // sempre é usado dessa forma, logo abaixo da linha da classe 
+@Id   //atributo de uma entidade estará relacionado à chave primária da respectiva tabela no banco de dados. 
+@GeneratedValue(strategy = GenerationType.IDENTITY)   // Para que a geração de ids seja controlada pelo provedor de persistência (Hibernate, por exemplo), 
+
+
+///////////////////////////////////////////////////////////----------------------------------------//////////////////////////////////////////////////////////////////////
+
 
 REPOSITORIO
 Comunica com o banco de dados
