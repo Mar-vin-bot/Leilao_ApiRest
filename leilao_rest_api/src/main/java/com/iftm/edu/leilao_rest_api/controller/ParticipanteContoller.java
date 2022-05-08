@@ -41,5 +41,7 @@ public class ParticipanteContoller {
     public Participante atualiza (@PathVariable Integer id, @RequestBody Participante entity) {  
         return service.atualiza(id entity);
     }
+
+    
     
 }
