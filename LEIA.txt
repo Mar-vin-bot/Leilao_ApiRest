@@ -11,7 +11,7 @@ Não esquecer do relacionamento entre classes
 @Data  &  @NoArgsConstructor   //ELIMINA A necessidade de criar construtor e get/set SEMPRE USADO EM CONJUNTO COM A DEPENDENCIA LOMBOK
 @Entity   // é utilizada para informar que uma classe também é uma entidade.
 implements Serializable   // inserido no nome da classe (interface)
-private static final long serialVersionUID = 1L   // sempre é usado dessa forma, logo abaixo da linha da classe 
+private static final long serialVersionUID = 1L   // SEM NECESSIDADE DE INSERIR sempre é usado dessa forma, logo abaixo da linha da classe 
 @Id   //atributo de uma entidade estará relacionado à chave primária da respectiva tabela no banco de dados. 
 @GeneratedValue(strategy = GenerationType.IDENTITY)   // Para que a geração de ids seja controlada pelo provedor de persistência (Hibernate, por exemplo), 
 
@@ -24,10 +24,14 @@ os repositorios são interfaces
 classe extends CrudRepository <nomeClasse,  Integer>
 Comunica com o banco de dados
 
-FindAll é um metodo exemplo de metodo interable 
+FindAll é um metodo, exemplo, de metodo interable 
 
-  @Override      //anotação necessaria para converter de interable para LIST
-List<CLASSE> FindAll();
+  @Override      //anotação necessaria 
+List<CLASSE> FindAll(); //converter de interable para LIST
+
+/////////////////////////////////////////////////////////----------------------------------------------//////////////////////////////////////
+
+
 
 
 

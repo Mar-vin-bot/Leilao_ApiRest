@@ -7,6 +7,10 @@ import com.iftm.edu.leilao_rest_api.repository.ParticipanteRepository;
 
 public class ParticipanteService implements GenericService <Participante, Integer> {
 
+  Autowired
+  ParticipanteRepository repository;
+
+
   @Override
   public Participante create(Participante object) {
     // TODO Auto-generated method stub

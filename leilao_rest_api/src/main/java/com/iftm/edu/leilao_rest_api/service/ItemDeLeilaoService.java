@@ -8,6 +8,10 @@ import com.iftm.edu.leilao_rest_api.domain.ItemDeLeilao;
 
 public class ItemDeLeilaoService implements GenericService <ItemDeLeilao, Integer> {
 
+  Autowired
+  ItemDeLeialaoRepository repository;
+
+
   @Override
   public ItemDeLeilao create(ItemDeLeilao object) {
     // TODO Auto-generated method stub
