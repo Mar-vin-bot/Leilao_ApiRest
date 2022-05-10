@@ -1,8 +1,8 @@
-/*package com.iftm.edu.leilao_rest_api.service;
+package com.iftm.edu.leilao_rest_api.service;
 
 import java.util.List;
 
-public class GenericService <T,ID> {
+public interface GenericService <T,ID> {
 
     T create(T object);
     List<T> readAll();
@@ -12,4 +12,4 @@ public class GenericService <T,ID> {
 
 
 }
-*/
+
