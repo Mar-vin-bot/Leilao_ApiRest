@@ -19,16 +19,19 @@ private static final long serialVersionUID = 1L   // SEM NECESSIDADE DE INSERIR 
 ///////////////////////////////////////////////////////////----------------------------------------//////////////////////////////////////////////////////////////////////
 
         REPOSITORIO
+Comunica com o banco de dados
 
 @Repositorio // deve ser colocado em cada para que o hibernet o identifique como tal
 os repositorios são interfaces 
-classe extends CrudRepository <nomeClasse,  Integer>
-Comunica com o banco de dados
 
-FindAll é um metodo, exemplo, de metodo interable 
-
+public interface nomeClasse extends CrudRepository <nomeClasse,  Integer>
   @Override      //anotação necessaria 
 List<CLASSE> FindAll(); //converter de interable para LIST
+
+
+FindAll é um metodo, exemplo, de metodo interable o metodo acima é para fazer a conversão de interable -> List
+
+
 
 /////////////////////////////////////////////////////////----------------------------------------------//////////////////////////////////////
 
