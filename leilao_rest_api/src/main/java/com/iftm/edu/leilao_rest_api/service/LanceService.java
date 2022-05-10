@@ -6,33 +6,34 @@ import com.iftm.edu.leilao_rest_api.domain.Lance;
 
 public class LanceService implements GenericService <Lance, Integer> {
 
+	Autowired
+	LanceRepository repository;
+
 	@Override
 	public Lance create(Lance object) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public List<Lance> readAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return repository.findAll();
 	}
 
 	@Override
 	public Lance readById(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		return repository.findById(id).orElseThrow(() -> new LanceNaoEncontradoException(id));
 	}
 
 	@Override
 	public Lance update(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		entity.setId(id);
+		return repository.save(entity);
 	}
 
 	@Override
 	public void delete(Integer id) {
-		// TODO Auto-generated method stub
+		return repository.deleteById(id);
 		
 	}
 
