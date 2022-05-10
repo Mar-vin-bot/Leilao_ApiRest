@@ -24,9 +24,9 @@ Comunica com o banco de dados
 @Repositorio // deve ser colocado em cada para que o hibernet o identifique como tal
 os repositorios são interfaces 
 
-public interface nomeClasse extends CrudRepository <nomeClasse,  Integer>
+public interface nomeClasseRepository extends CrudRepository<nomeClasseDomain, Integer> {
   @Override      //anotação necessaria 
-List<CLASSE> FindAll(); //converter de interable para LIST
+List< classeDomain > FindAll(); //converter de interable para LIST
 
 
 FindAll é um metodo, exemplo, de metodo interable o metodo acima é para fazer a conversão de interable -> List
@@ -36,6 +36,8 @@ FindAll é um metodo, exemplo, de metodo interable o metodo acima é para fazer 
 /////////////////////////////////////////////////////////----------------------------------------------//////////////////////////////////////
 
         SERVICE
+
+
 
 @Service //deve ser colocado em cada uma das entidades
 
@@ -73,8 +75,7 @@ https://angoti.github.io/spring2/index.html#1
 
 
 
-aplication propriets
-
+//aplication propriets
 logging.level.web=trace
 
 spring.jpa.show-sql=true

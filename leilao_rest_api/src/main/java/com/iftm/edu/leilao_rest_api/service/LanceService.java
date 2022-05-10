@@ -6,13 +6,12 @@ import com.iftm.edu.leilao_rest_api.domain.Lance;
 
 public class LanceService implements GenericService <Lance, Integer> {
 
-	Autowired
-	LanceRepository repository;
+
 
 	@Override
 	public Lance create(Lance object) {
-		
-		return null;
+		object.setId(id)
+		return repository.save(object);
 	}
 
 	@Override
