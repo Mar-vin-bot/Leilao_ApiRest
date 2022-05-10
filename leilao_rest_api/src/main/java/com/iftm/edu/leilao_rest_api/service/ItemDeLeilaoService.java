@@ -12,36 +12,33 @@ public class ItemDeLeilaoService implements GenericService <ItemDeLeilao, Intege
   ItemDeLeialaoRepository repository;
 
   @Autowired
-  LanceService lanceService;
+  LanceService repository;
 
 
   @Override
   public ItemDeLeilao create(ItemDeLeilao object) {
-    // TODO Auto-generated method stub
-    return null;
+    return repository.save(object);
   }
 
   @Override
   public List<ItemDeLeilao> readAll() {
-    // TODO Auto-generated method stub
-    return null;
+    return repository.findAll();
   }
 
   @Override
   public ItemDeLeilao readById(Integer id) {
-    // TODO Auto-generated method stub
-    return null;
+    return repository.findById(id).orElseThrow(() -> new LanceNaoEncontradoException(id));
   }
 
   @Override
-  public ItemDeLeilao update(Integer id) {
-    // TODO Auto-generated method stub
-    return null;
+  public ItemDeLeilao update(Integer id) { // ta faltando obj???
+    entity.setId(id);
+    return repository.save(entity);
   }
 
   @Override
   public void delete(Integer id) {
-    // TODO Auto-generated method stub
+    repository.deleteById(id);
     
   }
 
