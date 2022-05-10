@@ -8,6 +8,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface ParticipanteRepository extends CrudRepository <Participante, Integer> {
     
+    @Override
     List<Participante>findAll();
 
 }

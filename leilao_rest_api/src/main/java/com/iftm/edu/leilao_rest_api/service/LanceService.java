@@ -22,12 +22,13 @@ public class LanceService {
 		return repository.save(entity);
 	}
 
-	public Lance atualiza(Lance entity){
+	public Lance atualiza(Integer id, Lance entity){
+
 		entity.setId(id);
 		return repository.save(entity);
 	}
 
-	public Lance delete(Lance entity){
+	public void delete(Integer id){
 		return repository.deleteById(id);
 	}
 

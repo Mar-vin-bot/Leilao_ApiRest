@@ -8,6 +8,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface LanceRepository extends CrudRepository <Lance, Integer> {
     
-    List<Lance>findAll();
+    @Override
+    List<Lance>findAll();  //anotação necessaria para converter de interable para LIST
 
 }

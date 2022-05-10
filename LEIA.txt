@@ -20,10 +20,54 @@ private static final long serialVersionUID = 1L   // sempre é usado dessa forma
 
 
 REPOSITORIO
+os repositorios são interfaces 
+classe extends CrudRepository <nomeClasse,  Integer>
 Comunica com o banco de dados
 
+FindAll é um metodo exemplo de metodo interable 
+
+  @Override      //anotação necessaria para converter de interable para LIST
+List<CLASSE> FindAll();
 
 
 
 
+/////////////////////////////////////////////////////////////////////////////////-----------------------------------//////////////////////////////////////////////////////////
 Controlador faz requisição para servico. Em serviço temos que ter todos os metodos  requisitados pelo controlado
+
+
+
+
+//////////
+https://docs.spring.io/spring-framework/docs/5.3.16/reference/html/web.html#mvc-ann-requestmapping
+
+METODOS
+
+    CRUD
+CREAT - POST
+READ - GET 
+UPDATE - PUT
+DELETE - DELETE
+
+PATCH() ATUALIZA SOMENTE UM atributo
+PUT() ATUALIZA TODO FORMULARIO
+
+
+
+
+
+REFERENCIAS
+
+https://angoti.github.io/spring2/index.html#1
+
+
+
+aplication propriets
+
+logging.level.web=trace
+
+spring.jpa.show-sql=true
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.username=sa
+spring.datasource.password=

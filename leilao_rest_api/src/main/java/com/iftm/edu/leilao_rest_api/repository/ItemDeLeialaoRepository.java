@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ItemDeLeialaoRepository extends CrudRepository <ItemDeLeilao, Integer> {
 
+    @Override
     List<ItemDeLeilao> findAll();
     
 }

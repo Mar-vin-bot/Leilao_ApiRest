@@ -35,32 +35,4 @@ public class ItemDeLeilaoService {
     return repository.save(entity);
   }
 
-  /*
-   * public ItemDeLeilao registrarLance(Integer id, Lance lance) {
-   * ItemDeLeilao itemDeLeilao = findById(id);
-   * if (itemDeLeilao.getLeilaoAberto()) {
-   * // salva o lance no banco de dados
-   * lance = lanceService.save(lance);
-   * // adiciona à lista de lances do item de leilão
-   * itemDeLeilao.getLancesRecebidos().add(lance);
-   * if (itemDeLeilao.getLanceVencedor() == null ||
-   * (itemDeLeilao.getLanceVencedor() != null && lance.getValor() >
-   * itemDeLeilao.getLanceVencedor().getValor())) {
-   * itemDeLeilao.setLanceVencedor(lance);
-   * }
-   * return atualiza(id, itemDeLeilao);
-   * }
-   * throw new LeilaoEncerradoException();
-   * }
-   * 
-   * 
-   * 
-   * public Lance atualiza(Integer id){
-   * ItemDeLeilao itemDeLeilao = findById(id);
-   * itemDeLeilao.setLeialaoAberto(true) //mudar para false
-   * repository.save(itemDeLeilao)
-   * return itemDeLeilao.getLanceVendedor();
-   * }
-   */
-
 }
