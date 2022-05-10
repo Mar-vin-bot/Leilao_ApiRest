@@ -18,8 +18,9 @@ private static final long serialVersionUID = 1L   // SEM NECESSIDADE DE INSERIR 
 
 ///////////////////////////////////////////////////////////----------------------------------------//////////////////////////////////////////////////////////////////////
 
+        REPOSITORIO
 
-REPOSITORIO
+@Repositorio // deve ser colocado em cada para que o hibernet o identifique como tal
 os repositorios são interfaces 
 classe extends CrudRepository <nomeClasse,  Integer>
 Comunica com o banco de dados
@@ -31,6 +32,9 @@ List<CLASSE> FindAll(); //converter de interable para LIST
 
 /////////////////////////////////////////////////////////----------------------------------------------//////////////////////////////////////
 
+        SERVICE
+
+@Service //deve ser colocado em cada uma das entidades
 
 
 

@@ -11,6 +11,9 @@ public class ItemDeLeilaoService implements GenericService <ItemDeLeilao, Intege
   Autowired
   ItemDeLeialaoRepository repository;
 
+  @Autowired
+  LanceService lanceService;
+
 
   @Override
   public ItemDeLeilao create(ItemDeLeilao object) {
