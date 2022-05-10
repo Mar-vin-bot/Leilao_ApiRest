@@ -3,14 +3,43 @@ package com.iftm.edu.leilao_rest_api.service;
 import java.util.List;
 
 import com.iftm.edu.leilao_rest_api.domain.Lance;
-import com.iftm.edu.leilao_rest_api.repository.LanceRepository;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+public class LanceService implements GenericService <Lance, Integer> {
 
-@Service
-public class LanceService {
+	@Override
+	public Lance create(Lance object) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
+	@Override
+	public List<Lance> readAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Lance readById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Lance update(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+/*
     @Autowired
     LanceRepository repository;
 
@@ -35,5 +64,6 @@ public class LanceService {
 	public Lance findById(Integer id){
 		return repository.findById(id).orElseThrow(() -> new LanceNaoEncontradoException(id));
 	}
+*/
     
 }

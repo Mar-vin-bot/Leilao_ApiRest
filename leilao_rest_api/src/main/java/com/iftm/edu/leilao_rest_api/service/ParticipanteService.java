@@ -5,14 +5,44 @@ import java.util.List;
 import com.iftm.edu.leilao_rest_api.domain.Participante;
 import com.iftm.edu.leilao_rest_api.repository.ParticipanteRepository;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+public class ParticipanteService implements GenericService <Participante, Integer> {
+
+  @Override
+  public Participante create(Participante object) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public List<Participante> readAll() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public Participante readById(Integer id) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public Participante update(Integer id) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public void delete(Integer id) {
+    // TODO Auto-generated method stub
+    
+  }
 
 
 
-@Service
-public class ParticipanteService {
 
+
+
+/*
     @Autowired
     ParticipanteRepository repository;
 
@@ -23,5 +53,5 @@ public class ParticipanteService {
     public List<Participante> todos() { //tem que fazer um cast para List la no repository
 		return repository.findAll();
 	}
-
+*/
 }

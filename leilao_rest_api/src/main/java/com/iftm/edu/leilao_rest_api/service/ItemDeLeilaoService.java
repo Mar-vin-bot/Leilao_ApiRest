@@ -3,15 +3,44 @@ package com.iftm.edu.leilao_rest_api.service;
 import java.util.List;
 
 import com.iftm.edu.leilao_rest_api.domain.ItemDeLeilao;
-import com.iftm.edu.leilao_rest_api.domain.Lance;
-import com.iftm.edu.leilao_rest_api.repository.ItemDeLeialaoRepository;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service
-public class ItemDeLeilaoService {
 
+public class ItemDeLeilaoService implements GenericService <ItemDeLeilao, Integer> {
+
+  @Override
+  public ItemDeLeilao create(ItemDeLeilao object) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public List<ItemDeLeilao> readAll() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public ItemDeLeilao readById(Integer id) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public ItemDeLeilao update(Integer id) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public void delete(Integer id) {
+    // TODO Auto-generated method stub
+    
+  }
+
+
+
+/*
   @Autowired
   ItemDeLeialaoRepository repository;
 
@@ -34,5 +63,5 @@ public class ItemDeLeilaoService {
     entity.setId(id);
     return repository.save(entity);
   }
-
+*/
 }
