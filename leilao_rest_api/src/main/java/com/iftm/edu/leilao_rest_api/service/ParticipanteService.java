@@ -7,39 +7,34 @@ import com.iftm.edu.leilao_rest_api.repository.ParticipanteRepository;
 
 public class ParticipanteService implements GenericService <Participante, Integer> {
 
-  Autowired
-  ParticipanteRepository repository;
+    @Autowired
+    ParticipanteRepository participante;
 
+    @Override
+    public Participante create(Participante object) {
+        return participante.save(object);
+    }
 
-  @Override
-  public Participante create(Participante object) {
-    // TODO Auto-generated method stub
-    return null;
-  }
+    @Override
+    public List<Participante> readAll() {
+        return participante.findAll();
+    }
 
-  @Override
-  public List<Participante> readAll() {
-    // TODO Auto-generated method stub
-    return null;
-  }
+    @Override
+    public Participante readById(Integer id) {
+        return participante.findById(id).orElseThrow();
+    }
 
-  @Override
-  public Participante readById(Integer id) {
-    // TODO Auto-generated method stub
-    return null;
-  }
+    @Override
+    public Participante update(Integer id, Participante object) {
+        object.setId(id);
+        return participante.save(object);
+    }
 
-  @Override
-  public Participante update(Integer id) {
-    // TODO Auto-generated method stub
-    return null;
-  }
-
-  @Override
-  public void delete(Integer id) {
-    // TODO Auto-generated method stub
-    
-  }
+    @Override
+    public void delete(Integer id) {
+        participante.deleteById(id);
+    }
 
 
 
