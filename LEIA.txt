@@ -46,12 +46,19 @@ FindAll é um metodo, exemplo, de metodo interable o metodo acima é para fazer 
 
 
 /////////////////////////////////////////////////////////////////////////////////-----------------------------------//////////////////////////////////////////////////////////
-Controlador faz requisição para servico. Em serviço temos que ter todos os metodos  requisitados pelo controlado
+CONTROLADOR
+
+Classe é denominada como @RestController
+@RequestMapping("usarNomeEntidade") //
+Faz a impotação de service da mesma entidade ultilizando o  @Autowired
+
+Controlador faz requisição para servico. 
 
 
 
+//////////////////////////////////////////////////----------------------------------------------/////////////////////////////////////////////////////////////////////////
 
-//////////
+
 https://docs.spring.io/spring-framework/docs/5.3.16/reference/html/web.html#mvc-ann-requestmapping
 
 METODOS
